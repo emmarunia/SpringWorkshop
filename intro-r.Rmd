@@ -117,7 +117,7 @@ Type the following lines of code in the console in RStudio filling in your name 
 The email address is the one tied to your GitHub account.
 ```{r get your github congfigured}
 library(usethis)
-use_git_config(user.name = "GitHub username", user.email="your email")
+use_git_config(user.name = "emmarunia", user.email="enr9@duke.edu")
 ```
 For example, Joan's  would be
 
@@ -190,7 +190,7 @@ names(diamonds)
 
 <div class="question">
 How many variables are included in this data set? 
-
+10
 * 2
 * 9
 * 10
@@ -201,6 +201,7 @@ How many variables are included in this data set?
 <div class="exercise">
 What are some of the values for 'cut" included in this dataset? Hint: Take a look at the 'cut'
 variable in the Data Viewer to answer this question.
+ideal, premium, good, very good, fair
 </div>
 
 You should see that the data frame contains the columns `price`,  `carat`, and 
@@ -409,8 +410,8 @@ Now, with your partner, play with mutate and piping and create a plot of interes
 </div>
 
 ```{r plot-of-something-interesting}
-# type your code for the Exercise here, and Knit
-
+ggplot (data = diamonds, aes(x = total, y = price)) +
+  geom_point(color = "blue")
 
 
 ```
